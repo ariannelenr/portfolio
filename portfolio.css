@@ -1,0 +1,637 @@
+body {
+  background: #151316;
+  margin: 0;
+  overflow-x: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  width: auto;
+  z-index: 9;
+  position: relative;
+}
+.nav-links a {
+  font-size: 17px;
+  font-family: "Josefin Sans";
+  color: #f1eee4;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.nav-links a:hover,
+.fa-brands:hover,
+.fab:hover {
+  color: #dbd700 !important;
+  transition: 300ms ease all !important;
+}
+.socials {
+  display: flex;
+}
+.socials a {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  text-decoration: unset !important;
+}
+.fa-brands,
+.fab {
+  font-weight: 400;
+  font-size: 18px !important;
+  margin: 0 10px;
+}
+.nav img {
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-links a {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .nav-links a {
+    margin-right: 30px;
+  }
+  .socials a {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .nav {
+    padding: 30px 30px;
+  }
+}
+
+.explore-hero {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.explore-hero img {
+  width: 100%;
+}
+/* WEB */
+
+.web-designs,
+.graphic-designs {
+  width: 100%;
+  margin: 0 auto;
+}
+.web-works,
+.graphic-works {
+  display: flex;
+  padding-bottom: 100px;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: end;
+}
+
+/* MOBILE SEC */
+
+.mobile-works {
+  display: flex;
+  padding-bottom: 100px;
+}
+.mobile-designs {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+.mobile-container {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-container .design-bio {
+  background: #202029;
+  padding: 30px;
+  border-radius: 10px;
+}
+.img_container.flipbookings {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/flipbookings.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.flipbookings:hover {
+  background-image: url("assets/flipbookings.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.camper {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/camper.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.camper:hover {
+  background-image: url("assets/camper.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+/* GENERAL */
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+#carousel2 {
+  padding-bottom: 200px;
+}
+.carousel-inner,
+.carousel-inner2 {
+  display: flex; /* Align items in a row */
+  transition: transform 1000ms ease; /* Smooth transition */
+  gap: 30px;
+}
+
+.carousel-item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
+  flex-basis: auto;
+  transition: all 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: #202029;
+  padding: 30px;
+  border-radius: 10px;
+}
+.content {
+  width: 50%;
+}
+.content h3 {
+  font-size: 75px;
+  font-family: "Josefin Sans";
+  color: #f1eee4;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.content h3 span {
+  font-size: 75px;
+  font-family: "Josefin Sans";
+  color: #dbd700;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+.content p {
+  font-size: 17px;
+  font-family: "Josefin Sans";
+  color: #f1eee4;
+  font-weight: 300;
+  text-align: left;
+  line-height: 30px;
+  width: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+.design-bio h4 {
+  color: #8b4cf4;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+.design-bio h3 {
+  color: #f1eee4;
+  font-size: 20px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  text-align: left;
+  text-transform: capitalize;
+  margin: 0;
+}
+.bio-container {
+  display: flex;
+  padding-top: 30px;
+}
+.bio2 {
+  width: 50%;
+}
+.bio1 {
+  padding-right: 10px;
+  width: 50%;
+}
+.img_container.realestate {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/realestate.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.realestate:hover {
+  background-image: url("assets/realestate.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.teacrafters {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/teacrafters.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.teacrafters:hover {
+  background-image: url("assets/teacrafters.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.unitouch {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/unitouch.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.unitouch:hover {
+  background-image: url("assets/unitouch.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.camerashop {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/camerashop.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.camerashop:hover {
+  background-image: url("assets/camerashop.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.kimyou {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/kimyou.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.kimyou:hover {
+  background-image: url("assets/kimyou.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.img_container.kewpie {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/kewpie.png");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.img_container.kewpie:hover {
+  background-image: url("assets/kewpie.gif");
+  background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-item:hover,
+.design-bio:hover {
+  --borderWidth: 2px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+  transition: 500ms ease all;
+  border-radius: 10px;
+}
+.carousel-item:after,
+.design-bio:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 215, 0, 1) 0%,
+    rgba(139, 76, 244, 1) 100%
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* LOGO & BRANDING */
+.img_container.optimus {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/logo-optimus.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.carousel-item:hover .img_container.optimus {
+  background-image: url("assets/logo-optimus-hover.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+}
+.img_container.serveysio {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/logo-serveysio.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.carousel-item:hover .img_container.serveysio {
+  background-image: url("assets/logo-serveysio-hover.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+}
+.img_container.mscentx {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/logo-mscentx.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.carousel-item:hover .img_container.mscentx {
+  background-image: url("assets/logo-mscentx-hover.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+}
+.img_container.pixxelabs {
+  width: 525px;
+  height: 440px;
+  background-image: url("assets/logo-pixxelabs.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.carousel-item:hover .img_container.pixxelabs {
+  background-image: url("assets/logo-pixxelabs-hover.jpg");
+  background-size: cover;
+  transition: 300ms ease-in-out;
+}
+
+/* FOOTER */
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #202029;
+  height: 90px;
+  align-items: center;
+}
+.contact-info p {
+  font-size: 17px;
+  font-family: "Josefin Sans";
+  color: #f1eee4;
+  font-weight: 300;
+  text-align: right;
+  line-height: 30px;
+  margin: 0;
+  padding-left: 50px;
+}
+.contact-info p span {
+  font-weight: 500;
+  color: #8b4cf4;
+}
+.contact-links {
+  display: flex;
+  gap: 50px;
+  padding-right: 50px;
+}
+.contact-links a {
+  font-size: 17px;
+  font-family: "Josefin Sans";
+  color: #f1eee4;
+  font-weight: 300;
+  text-align: right;
+  line-height: 30px;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-info {
+    display: block;
+    height: auto;
+    padding: 30px;
+    width: auto;
+  }
+  .contact-info p {
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact-links {
+    padding-right: 0;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contact-info p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .contact-links a {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact-links {
+    display: block;
+  }
+  .contact-links a {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .contact-links img {
+    top: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .contact-info {
+    padding: 30px 30px 0;
+  }
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1250px) {
+  .web-works,
+  .graphic-works {
+    width: auto;
+    padding: 0 50px 70px;
+  }
+  .mobile-designs {
+    width: auto;
+    padding: 120px 50px;
+  }
+  .mobile-works {
+    padding-bottom: 70px;
+  }
+  #carousel2 {
+    padding-bottom: 120px;
+  }
+  .mobile-container .design-bio {
+    width: 100%;
+  }
+  .mobile-container {
+    gap: 30px;
+  }
+  .img_container.flipbookings,
+  .img_container.camper {
+    width: auto !important;
+  }
+  .content {
+    width: 100%;
+  }
+  .explore-hero {
+    width: auto;
+    padding: 70px 50px;
+  }
+  .img_container {
+    width: 517px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .content p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .content h3 span,
+  .content h3 {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  .design-bio h3 {
+    font-size: 17px;
+  }
+  .design-bio h4 {
+    font-size: 10px;
+    margin: 0 0 12px;
+  }
+  .mobile-container .design-bio,
+  .carousel-item {
+    padding: 20px;
+  }
+  .carousel-inner,
+  .carousel-inner2 {
+    gap: 20px;
+  }
+  .mobile-container {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-container {
+    display: block;
+  }
+  .mobile-container .design-bio {
+    width: auto;
+  }
+  .img_container.flipbookings,
+  .img_container.camper {
+    height: 70vw !important;
+  }
+  .mobile-container .design-bio:first-child {
+    margin-bottom: 30px;
+  }
+  .img_container {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .explore-hero {
+    padding: 70px 30px;
+  }
+  .mobile-designs {
+    padding: 90px 30px;
+  }
+  .web-works,
+  .graphic-works {
+    padding: 0 30px 70px;
+  }
+  #carousel2 {
+    padding-bottom: 90px;
+  }
+}

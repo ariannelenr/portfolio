@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<body>
+
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/ariannelnr/" target='_blank'><i class="fa-brands fa-instagram" style="color: #F1EEE4;"></i></a>
+                <a href="https://www.linkedin.com/in/arianne-anastacio-b73079176/" target='_blank'><i class="fa-brands fa-linkedin-in" style="color: #F1EEE4;"></i></a>
+            </div>
+        </nav>
+    
+
+        <div class="hero">
+            <div class="hero-container">
+            <h1>Web</h1>
+            <h1>Ui/Ux</h1>
+            <h1>Graphic</h1>
+                <h3>Designer</h3>
+            <p>A driven individual with a strong design, marketing and branding experience. A kind of designer who has a simple, straightforward yet exquisite visual style; Always seeks for new styles, trends and sources of inspiration.</p>
+            <a href="#selected-works" class="hero-btn"><img src="assets/button.png"><button>selected works</button></a>   
+        </div>
+        </div>
+
+
+        <div class="selected-works" id="selected-works">
+            <div class="works-div">
+            <img src="assets\selected-works.svg">
+            </div></div>
+        
+        <div class="selected-works-content">   
+        
+            <div class="works-cards">
+                <a href="portfolio.html#web-designs"><div class="designs">
+                <img src="assets\web-designs.png">
+                <h4>Web Designs</h4>
+            </div></a>
+            <a href="portfolio.html#mobile-designs"><div class="designs">
+                <img src="assets\mobile-designs.png">
+                <h4>Mobile Designs</h4>
+            </div></a>
+            <a href="portfolio.html#graphic-designs"><div class="designs">
+                <img src="assets\logo-designs.png">
+                <h4>Logo and Branding</h4>
+            </div></a>
+    </div>
+              
+    </div>
+
+
+
+
+        <div class="meet-designer">
+            <div class="meet-designer-col-1">
+                <h2>A <span>Web Designer</span><br>
+                    based in Metro Manila,<br>
+                    <em>Philippines</em></h2> 
+                    <p>A young, goal-oriented, passionate designer holding a bachelor’s degree in AB Multimedia Arts. Five years in design industry, she honed her skills and gained a keen sense of detail. Any design related, whether for the web, UX/UI, or Graphic, I've got everything covered!
+                    <br><br>
+                    In addition to that, I have strong conversational skills. For over six years, I supported my education by working as a call center agent in the BPO sector. I have shown time and time again that I am a dependable professional who can work well both individually and in a team.
+                    <br><br>
+                    I am confident that my talents and abilities will significantly benefit your company. Let’s work together!</p>    
+             </div>
+
+             <div class="meet-designer-col-2">
+
+                <div class="meet-designer-numbers">
+                    <div class="running-numbers">
+                        <h3 class="counter">5</h3>
+                        <p>years work experience</p>
+                    </div>
+
+                    <div class="running-numbers">
+                        <h3 class="counter">170</h3><span>+</span>
+                        <p>web design projects</p>
+                    </div>
+
+                    <div class="running-numbers">
+                        <h3 class="counter">50</h3><span>+</span>
+                        <p>designed for different industries</p>
+                    </div>
+        
+                <script>
+                    $(document).ready(function() {
+                        $(".counter").counterUp ({
+                            delay: 10,
+                            time: 1200
+                        });
+                    });
+                </script>
+                </div>
+                
+                
+        
+                <div class="meet-designer-testimonials">
+
+                    <div class="horizontal-line"></div> 
+
+                    <ul class="clients">
+                        <li class="review">"Extremely creative designer. Able to deliver high quality content from limited directive/instructions. Uses modern tools / technology. Great communication, friendly. Recommended A++"<h5>- Milo from Inodeas Group</h5></li>
+
+                      </ul>
+                    </div>
+                    <script>
+                    $(document).ready(function(){
+                        var fadetime = 500;
+                        var delaytime = 3000;
+                        function carousel(){
+                          $('.review:first-child').fadeIn(fadetime).delay(delaytime).queue(function(){
+                            $(this).fadeOut(fadetime).appendTo('.clients').dequeue();
+                          });
+                        }
+                        carousel();
+                        setInterval( function(){ carousel() }, fadetime + delaytime);
+                      });
+                    </script>
+                    </div>   
+
+                </div>   
+
+
+
+
+    <div class="contact-designer">        
+        <div class="slider">
+            <div class="slide-img">
+              <div class="slide"><img src="assets\work-slider.png"></div>
+            </div>
+         <div class="slide-img">
+              <div class="slide"><img src="assets\work-slider.png"></div>
+            </div>
+         <div class="slide-img">
+              <div class="slide"><img src="assets\work-slider.png"></div>
+            </div>
+        </div>
+        
+        <a href="assets/resume.pdf" target="_blank" class="contact-btn"><img src="assets/button.png"><button>download my resume</button></a>        
+    </div>
+
+
+
+    <footer>
+        <div class="contact-info">
+            <div class="copyright">
+            <p><span>©Lenr 2024.</span> All rights reserved. Designed and built by, Arianne Lenr Anastacio</p>
+            </div>
+
+        <div class="contact-links">
+            <a href ="mailto:aariannelenr@gmail.com"><img src="assets\mail.svg">aariannelenr@gmail.com</a>
+            <a href ="tel:09983437421"><img src="assets\call.svg">+63998 343 7421</a>
+            </div>
+        </div>
+    </footer>  
+
+
+</body>
+</html>
+
+
+
+
